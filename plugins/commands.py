@@ -8,13 +8,13 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
-Pikachu = ["https://telegra.ph/file/e251e55ce213b2e9f4c03.jpg",
-           "https://telegra.ph/file/47dba9369c1660fd7bf87.jpg",
-           "https://telegra.ph/file/91da14cb4c250e833206a.jpg",
+Pikachu = ["https://telegra.ph/file/027bea5fe5b3efaf93936.jpg",
+           "https://telegra.ph/file/fa8e89c576c775bca6538.jpg",
+           "https://telegra.ph/file/debace8bd0fc01cbd2386.jpg",
            "https://telegra.ph/file/2964d8516056676e82099.jpg",
-           "https://telegra.ph/file/8cc2965db0ea46ea1318f.jpg",
+           "https://telegra.ph/file/889bec5e11cdacd295981.jpg",
            "https://telegra.ph/file/b886ff9934e6519278a53.jpg",
-           "https://telegra.ph/file/6d37256aace9919242e46.jpg"]
+           "https://telegra.ph/file/a994f9e139fbbe411cda6.jpg"]
 
 
 
@@ -79,7 +79,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [[
 
-                       InlineKeyboardButton("🍿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 🍿", url="https://t.me/primer_roomm"),
+                       InlineKeyboardButton("🍿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 🍿", url="https://t.me/Movies_4you"),
                     ]]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
@@ -109,15 +109,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url= "https://t.me/PC_autofilterBot?startgroup=true")
+                        InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url= "http://t.me/Best_Autofilter_v4_Bot?startgroup=true")
                     ],
                     [
                         InlineKeyboardButton("sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("ᴀɴʏ ʜᴇʟᴘ", url="telegram.me/STMbOTsUPPORTgROUP")
+                        InlineKeyboardButton("ᴀɴʏ ʜᴇʟᴘ", url="https://t.me/Movies_4you")
                     ],
                     [
-                        InlineKeyboardButton("ᴍʏ ᴅᴇᴠ", url="https://t.me/xxxtentacionn12"),
-                        InlineKeyboardButton("ʙᴏᴛ ᴇᴅɪᴛᴏʀ", url="https://t.me/VAMPIRE_KING_NO_1")
+                        InlineKeyboardButton("ᴍʏ ᴅᴇᴠ", url="https://t.me/KingOf_univers"),
+                        InlineKeyboardButton("ʙᴏᴛ ᴇᴅɪᴛᴏʀ", url="https://t.me/KingOf_univers")
                     ],
                     [
                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
@@ -209,11 +209,11 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [                   
-            InlineKeyboardButton('💜૦ωՈ૯Ր💜', url='https://t.me/xxxtentacionn12'),
-            InlineKeyboardButton('🆁🅴🅿️🅾️', url='https://t.me/NOKIERUNNOIPPKITTUM'),
+            InlineKeyboardButton('💜૦ωՈ૯Ր💜', url='https://t.me/KingOf_univers'),
+            InlineKeyboardButton('🆁🅴🅿️🅾️', url='https://t.me/Movies_4you'),
         ]
         ]
-    await message.reply(text="<b>★ 𝙼𝚈 𝙽𝙰𝙼𝙴:𝚉𝙰𝚈𝙰𝙽 𝙼𝙰𝙻𝙸𝙺\n★ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href='https://t.me/xxxtentacionn12'>𝗚𝗛𝗢𝗦𝗧 𝗠𝗜𝗖𝗞𝗘𝗬</a>\n★ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <code>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</code>\n★ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href='https://docs.pyrogram.org/'>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>\n𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴: <a href='https://github.com/Judson-web/Zayan-Malik-V2'>𝙲𝙻𝙸𝙲𝙺 𝙼𝙴 👈</a>\n★ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href='https://www.mongodb.com/cloud'>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>\n★ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: <a href='https://heroku.com/'>𝙷𝙴𝚁𝙾𝙺𝚄</a>\n★ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅𝟻.𝟶 [ 𝙱𝙴𝚃𝙰 ] </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>★ 𝙼𝚈 𝙽𝙰𝙼𝙴:Suraj\n★ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href='https://t.me/KingOf_univers'>Suraj</a>\n★ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <code>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</code>\n★ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href='https://docs.pyrogram.org/'>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>\n𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴: <a href='https://t.me/KingOf_univers'>𝙲𝙻𝙸𝙲𝙺 𝙼𝙴 👈</a>\n★ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href='https://www.mongodb.com/cloud'>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>\n★ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: <a href='https://heroku.com/'>𝙷𝙴𝚁𝙾𝙺𝚄</a>\n★ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅𝟻.𝟶 [ 𝙱𝙴𝚃𝙰 ] </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     
     
             
