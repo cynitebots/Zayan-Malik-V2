@@ -293,11 +293,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('🔰 Oᗯᑎᗴᖇ 🔰', url='https://t.me/xxxtentacionn12'),
+                    InlineKeyboardButton('🔰 Oᗯᑎᗴᖇ 🔰', url='https://t.me/KingOf_univers'),
                     InlineKeyboardButton('🆂🅾️🆄🆁🅲🅴 🅲🅾️🅳🅴', callback_data="source")
                 ]
                 ]
-            await query.message.edit(text="<b>ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/xxxtentacionn12'>𝗚𝗛𝗢𝗦𝗧 𝗠𝗜𝗖𝗞𝗘𝗬</a>\nʟᴀɴɢᴜᴀɢᴇ : <code>ᴘʏᴛʜᴏɴ 3</code>\nʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>\nsᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://github.com/Judson-web/Zayan-Malik-V2'>ᴄʟɪᴄᴋ ᴍᴇ 👈</a>\nᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>ᴍᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/KingOf_univers'>This Person</a>\nʟᴀɴɢᴜᴀɢᴇ : <code>ᴘʏᴛʜᴏɴ 3</code>\nʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>\nsᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/KingOf_univers'>ᴄʟɪᴄᴋ ᴍᴇ 👈</a>\nᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>ᴍᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
         elif query.data.startswith("subinps"):
@@ -354,10 +354,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 
 
         elif query.data == "pages":
-            await query.answer("ഇത് നിനക്കുവേണ്ടി ഉള്ളതല്ല മോനെ, വിട്ടോളി😏",show_alert=True)
+            await query.answer("ᴛʜɪs ɪs ɴᴏᴛ ꜰᴏʀ ʏᴏᴜ, ᴍᴀɴ😏",show_alert=True)
 
         elif query.data == "Next":
-            await query.answer("ഇത് നിനക്കുവേണ്ടി ഉള്ളതല്ല മോനെ, വിട്ടോളി😏",show_alert=True)
+            await query.answer("ᴛʜɪs ɪs ɴᴏᴛ ꜰᴏʀ ʏᴏᴜ, ᴍᴀɴ😏",show_alert=True)
         
         elif query.data == "source":
-            await query.answer("Molil Nokede Phha 😤",show_alert=True)
+            await query.answer("Contact To Owner 😤",show_alert=True)
