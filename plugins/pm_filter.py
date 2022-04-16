@@ -134,14 +134,9 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                file_name = file.file_name
-                file_size = get_size(file.file_size)
-                file_link = f"https://telegram.dog/{nyva}?start=mickey_-_-_-_{file_id}"
+                filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [
-                      InlineKeyboardButton(text=f"{file_name}", url=f"{file_link}"),
-                      InlineKeyboardButton(text=f"{file_size}", url=f"{file_link}")
-                    ]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=mickey_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -297,7 +292,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🆂🅾️🆄🆁🅲🅴 🅲🅾️🅳🅴', callback_data="source")
                 ]
                 ]
-            await query.message.edit(text="<b>ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/KingOf_univers'>SURAJ</a>\nʟᴀɴɢᴜᴀɢᴇ : <code>ᴘʏᴛʜᴏɴ 3</code>\nʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>\nsᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href='https://t.me/KingOf_univers'>ᴄʟɪᴄᴋ ᴍᴇ 👈</a>\nᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>ᴍᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/KingOf_univers'>會؄𝚂𝚄𝚁𝙰𝙹؄會</a>\nʟᴀɴɢᴜᴀɢᴇ : <code>ᴘʏᴛʜᴏɴ 3</code>\nʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>\nᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Movies4youBackup'>ᴄʟɪᴄᴋ ᴍᴇ 👈</a>\nᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>ᴍᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
         elif query.data.startswith("subinps"):
@@ -330,7 +325,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("Bruda I Like Your Smartness, But Don't Be Oversmart, Join Now 😎",show_alert=True)
+                await query.answer("I Like Your Smartness, But Don't Be Oversmart, Join Now 😎",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -360,4 +355,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer("This is not for you, man😏",show_alert=True)
         
         elif query.data == "source":
-            await query.answer("Source Ke Liye Owner Se Contact Kijiye 😤",show_alert=True)
+            await query.answer("Sorce Ke Liye Owner Se Contact Kare 😤",show_alert=True)
