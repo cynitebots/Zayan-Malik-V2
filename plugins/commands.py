@@ -8,13 +8,13 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
-Pikachu = ["https://telegra.ph/file/027bea5fe5b3efaf93936.jpg",
-           "https://telegra.ph/file/fa8e89c576c775bca6538.jpg",
-           "https://telegra.ph/file/debace8bd0fc01cbd2386.jpg",
-           "https://telegra.ph/file/2964d8516056676e82099.jpg",
-           "https://telegra.ph/file/889bec5e11cdacd295981.jpg",
-           "https://telegra.ph/file/b886ff9934e6519278a53.jpg",
-           "https://telegra.ph/file/a994f9e139fbbe411cda6.jpg"]
+Pikachu = ["https://telegra.ph/file/605d7fb573b054720652c.jpg",
+           "https://telegra.ph/file/908fb3f9bcc1c67328bba.jpg",
+           "https://telegra.ph/file/d704d6b1c9466a8fdba8c.jpg",
+           "https://telegra.ph/file/a9cc1aa905ef6fab5e12f.jpg",
+           "https://telegra.ph/file/605d7fb573b054720652c.jpg",
+           "https://telegra.ph/file/908fb3f9bcc1c67328bba.jpg",
+           "https://telegra.ph/file/a9cc1aa905ef6fab5e12f.jpg"]
 
 
 
@@ -117,7 +117,7 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("ᴍʏ ᴅᴇᴠ", url="https://t.me/KingOf_univers"),
-                        InlineKeyboardButton("ʙᴏᴛ ᴇᴅɪᴛᴏʀ", url="https://t.me/KingOf_univers")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇᴢ", url="https://t.me/Movies4youBackup")
                     ],
                     [
                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
