@@ -66,7 +66,7 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = f"📂[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
@@ -134,7 +134,7 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = f"📂[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=mickey_-_-_-_{file_id}")]
                 )
@@ -286,12 +286,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
         elif query.data == "about":
-            buttons= [[
-                InlineKeyboardButton('🔰 Oᗯᑎᗴᖇ 🔰', url='https://t.me/IRONMAN_OP'),
-                InlineKeyboardButton('🆂🅾️🆄🆁🅲🅴 🅲🅾️🅳🅴', callback_data="source")
-                ],[
-                InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
-            ]]    
+            buttons = [
+                [
+                    InlineKeyboardButton('🔰 Oᗯᑎᗴᖇ 🔰', url='https://t.me/IRONMAN_OP'),
+                    InlineKeyboardButton('🆂🅾️🆄🆁🅲🅴 🅲🅾️🅳🅴', callback_data="source")
+                ]
+                ]    
             await query.message.edit(text="<b>Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/IRONMAN_OP'>Aɴᴜʀᴀɢ</a>\nLᴀɴɢᴜᴀɢᴇ : <code>Pʏᴛʜᴏɴ 3</code>\nLɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>\nUᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Movie_Stars_Studios'>Cʟɪᴄᴋ ᴍᴇ 👈</a>\nDᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>Mᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
