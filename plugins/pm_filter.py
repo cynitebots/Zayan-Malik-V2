@@ -93,10 +93,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Film/Series : {search}\n🌟 IMDB Rating : {random.choice(RATING)}\n🎭 Genres : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>Tɪᴛʟᴇ : {search}\n🌟 Rᴀᴛɪɴɢ : {random.choice(RATING)}\n🎭 Gᴇɴʀᴇs : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>Film/Series : {search}\n🌟 IMDB Rating : {random.choice(RATING)}\n🎭 Genres : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>Tɪᴛʟᴇ : {search}\n🌟 Rᴀᴛɪɴɢ : {random.choice(RATING)}\n🎭 Gᴇɴʀᴇs : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -112,9 +112,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 Rating : {random.choice(RATING)}\n🎭 Genres : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬 Tɪᴛʟᴇ : {search}\n🌟 Rᴀᴛɪɴɢ : {random.choice(RATING)}\n🎭 Gᴇɴʀᴇs : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b><b>🎬 Film/Series : {search}\n🌟 Rating : {random.choice(RATING)}\n🎭 Genres : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b><b>🎬 Tɪᴛʟᴇ : {search}\n🌟 Rᴀᴛɪɴɢ : {random.choice(RATING)}\n🎭 Gᴇɴʀᴇs : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -124,7 +124,7 @@ async def group(client, message):
         btn = []
 
         search = message.text
-        result_txt = f"<b>🎬 Film/Series : {search}\n🌟 Rating : {random.choice(RATING)}\n🎭 Genres : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>"
+        result_txt = f"<b>🎬 Tɪᴛʟᴇ : {search}\n🌟 Rᴀᴛɪɴɢ : {random.choice(RATING)}\n🎭 Gᴇɴʀᴇs : {random.choice(GENRES)}\n©{message.chat.title}🍿</b>"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -171,7 +171,7 @@ async def group(client, message):
             [InlineKeyboardButton(text="Gᴏ Tᴏ Nᴇxᴛ Pᴀɢᴇ 🚀",callback_data=f"next_0_{keyword}")]
         )
         buttons.append(    
-            [InlineKeyboardButton(text=f"⭕ Pages 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"📜 Pᴀɢᴇ 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -221,10 +221,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⏪ Bᴀᴄᴋ", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"⭕ Pages {int(index)+2}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📜 Pᴀɢᴇ {int(index)+2}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -235,10 +235,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⏪ Bᴀᴄᴋ", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("Nᴇxᴛ ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"⭕ Pages {int(index)+2}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📜 Pᴀɢᴇ {int(index)+2}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -259,10 +259,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("Nᴇxᴛ ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"⭕ Pages {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📜 Pᴀɢᴇ {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -273,10 +273,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⏪ Bᴀᴄᴋ", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("Nᴇxᴛ ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"⭕ Pages {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📜 Pᴀɢᴇ {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -288,11 +288,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('🔰 Oᗯᑎᗴᖇ 🔰', url='https://t.me/KingOf_univers'),
+                    InlineKeyboardButton('🔰 Oᗯᑎᗴᖇ 🔰', url='https://t.me/IRONMAN_OP'),
                     InlineKeyboardButton('🆂🅾️🆄🆁🅲🅴 🅲🅾️🅳🅴', callback_data="source")
                 ]
                 ]
-            await query.message.edit(text="<b>ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/KingOf_univers'>會؄𝚂𝚄𝚁𝙰𝙹؄會</a>\nʟᴀɴɢᴜᴀɢᴇ : <code>ᴘʏᴛʜᴏɴ 3</code>\nʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>\nᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Movies4youBackup'>ᴄʟɪᴄᴋ ᴍᴇ 👈</a>\nᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>ᴍᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/IRONMAN_OP'>Aɴᴜʀᴀɢ</a>\nLᴀɴɢᴜᴀɢᴇ : <code>Pʏᴛʜᴏɴ 3</code>\nLɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>\nUᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Movie_Stars_Studios'>Cʟɪᴄᴋ ᴍᴇ 👈</a>\nDᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>Mᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
         elif query.data.startswith("subinps"):
@@ -325,7 +325,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart, Join Now 😎",show_alert=True)
+                await query.answer("I Lɪᴋᴇ Yᴏᴜʀ Sᴍᴀʀᴛɴᴇss, Bᴜᴛ Dᴏɴ'ᴛ Bᴇ Oᴠᴇʀsᴍᴀʀᴛ, Jᴏɪɴ Nᴏᴡ 😎",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -349,10 +349,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 
 
         elif query.data == "pages":
-            await query.answer("This is not for you, man😏",show_alert=True)
+            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ, Mᴀɴ😏",show_alert=True)
 
         elif query.data == "Next":
-            await query.answer("This is not for you, man😏",show_alert=True)
+            await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ, Mᴀɴ😏",show_alert=True)
         
         elif query.data == "source":
-            await query.answer("Sorce Ke Liye Owner Se Contact Kare 😤",show_alert=True)
+            await query.answer("Sᴏʀᴄᴇ Kᴇ Lɪʏᴇ Oᴡɴᴇʀ Sᴇ Cᴏɴᴛᴀᴄᴛ Kᴀʀᴇ 😤",show_alert=True)
