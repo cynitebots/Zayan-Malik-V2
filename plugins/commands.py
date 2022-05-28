@@ -8,7 +8,7 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
-Pikachu = ["https://telegra.ph/file/605d7fb573b054720652c.jpg",
+Pikachu = ["https://telegra.ph/file/d704d6b1c9466a8fdba8c.jpg",
            "https://telegra.ph/file/908fb3f9bcc1c67328bba.jpg",
            "https://telegra.ph/file/d704d6b1c9466a8fdba8c.jpg",
            "https://telegra.ph/file/a9cc1aa905ef6fab5e12f.jpg",
