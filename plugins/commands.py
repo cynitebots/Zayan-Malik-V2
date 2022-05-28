@@ -213,7 +213,7 @@ async def bot_info(bot, message):
             InlineKeyboardButton('🆁🅴🅿️🅾️', url='https://t.me/Movie_Stars_Official'),
         ]
         ]
-    await message.reply(text="<b>★ 𝙼𝚈 𝙽𝙰𝙼𝙴:Suraj\n★ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href='https://t.me/KingOf_univers'>Suraj</a>\n★ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <code>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</code>\n★ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href='https://docs.pyrogram.org/'>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>\n𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴: <a href='https://t.me/KingOf_univers'>𝙲𝙻𝙸𝙲𝙺 𝙼𝙴 👈</a>\n★ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href='https://www.mongodb.com/cloud'>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>\n★ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: <a href='https://heroku.com/'>𝙷𝙴𝚁𝙾𝙺𝚄</a>\n★ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅𝟻.𝟶 [ 𝙱𝙴𝚃𝙰 ] </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/IRONMAN_OP'>Aɴᴜʀᴀɢ</a>\nLᴀɴɢᴜᴀɢᴇ : <code>Pʏᴛʜᴏɴ 3</code>\nLɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>\nUᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Movie_Stars_Studios'>Cʟɪᴄᴋ ᴍᴇ 👈</a>\nDᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/cloud'>Mᴏɴɢᴏ ᴅʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     
     
             
