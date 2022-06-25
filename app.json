@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://t.me/primer_roomm",
-    "repository": "https://github.com/Scammaster/Zayan-Malik-V2/blob/d221dc87986b53eb07ef649778b93cf7f39f1669/README.md
+    "repository": "https://github.com/Scammaster/Zayan-Malik-V2
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
