@@ -79,7 +79,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [[
 
-                       InlineKeyboardButton("🍿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 🍿", url="https://t.me/Movie_Stars_Official"),
+                       InlineKeyboardButton("🍿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 🍿", url="https://t.me/Moviestarofficle"),
                     ]]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
@@ -113,11 +113,11 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("sᴇᴀʀᴄʜ ʜᴇʀᴇ", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("ᴀɴʏ ʜᴇʟᴘ", url="https://t.me/Movie_Stars_Official")
+                        InlineKeyboardButton("ᴀɴʏ ʜᴇʟᴘ", url="https://t.me/Moviestarofficle")
                     ],
                     [
                         InlineKeyboardButton("ᴍʏ ᴅᴇᴠ", url="https://t.me/IRONMAN_OP"),
-                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇᴢ", url="https://t.me/Movie_Stars_Studios")
+                        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇᴢ", url="https://t.me/Moviestarofficle")
                     ],
                     [
                         InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
